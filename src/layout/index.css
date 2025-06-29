@@ -1,0 +1,20 @@
+.ant-layout-header {
+  background-color: #6366f1;
+  color: white;
+  height: auto;
+  padding: 16px 20px;
+}
+
+.ant-layout-content {
+  min-height: calc(100vh - 64px);
+  background-color: #fff;
+}
+
+.ant-layout-header a:hover {
+  text-decoration: underline;
+}
+
+.ant-layout-header a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
