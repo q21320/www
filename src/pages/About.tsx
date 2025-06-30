@@ -1,11 +1,20 @@
 import React from 'react';
-
+// import {
+//   FreeLayoutEditorProvider,
+//   EditorRenderer,
+// } from '@flowgram.ai/free-layout-editor';
+// import '@flowgram.ai/free-layout-editor/index.css'; // 加载样式
+// import { useEditorProps } from '@/hooks/use-editor-props' // 画布详细的 props 配置
+// import { Tools } from '@/components/tools' // 画布工具
 const About: React.FC = () => {
+  // const editorProps = useEditorProps()
   return (
     <div className="about-container">
-      <h1>关于我们</h1>
-      <p>这是React路由应用的关于页面内容</p>
-      <p>我们使用React Router v6实现客户端路由</p>
+      {/* <FreeLayoutEditorProvider {...editorProps}>
+        <EditorRenderer className="demo-editor" />
+        <Tools />
+      </FreeLayoutEditorProvider> */}
+      12312321
     </div>
   );
 };
