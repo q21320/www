@@ -3,6 +3,7 @@ import { usePlaygroundTools, useClientContext } from '@flowgram.ai/free-layout-e
 
 export function Tools() {
   const { history } = useClientContext();
+  
   const tools = usePlaygroundTools();
   const [canUndo, setCanUndo] = useState(false);
   const [canRedo, setCanRedo] = useState(false);
@@ -15,7 +16,7 @@ export function Tools() {
     return () => disposable.dispose();
   }, [history]);
 
-  return <div style={{ position: 'absolute', zIndex: 10, bottom: 16, left: 226, display: 'flex', gap: 8 }}>
+  return <div style={{ position: 'absolute', zIndex: 10, bottom: 16, left: 20, display: 'flex', gap: 8 }}>
     <button onClick={() => tools.zoomin()}>ZoomIn</button>
     <button onClick={() => tools.zoomout()}>ZoomOut</button>
     <button onClick={() => tools.fitView()}>Fitview</button>

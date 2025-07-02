@@ -1,6 +1,6 @@
-import { useNodeRender, WorkflowNodeRenderer } from '@flowgram.ai/free-layout-editor';
+import { FlowNodeEntity, useNodeRender, WorkflowNodeRenderer } from '@flowgram.ai/free-layout-editor';
 
-export const BaseNode = () => {
+export const BaseNode = (props: { node: FlowNodeEntity; }) => {
   /**
    * 提供节点渲染相关的方法
    */
