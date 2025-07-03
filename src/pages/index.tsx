@@ -41,7 +41,7 @@ export default function App() {
       // gltf.scene.rotation.set(0, Math.PI * 2, 0);
       gltf.scene.scale.set(1.2, 1.2, 1.2);
       // 添加坐标轴和网格辅助器帮助调试
-      const axesHelper = new THREE.AxesHelper(5);
+      const axesHelper = new THREE.AxesHelper(10);
       scene.add(axesHelper);
       const gridHelper = new THREE.GridHelper(10, 10);
       scene.add(gridHelper);
@@ -53,8 +53,8 @@ export default function App() {
       alert('模型加载失败，请检查控制台错误信息');
     });
     // 设置相机位置以确保模型可见
-    camera.position.set(0, 0, 5);
-    camera.lookAt(0, -0.5, 0);
+    camera.position.set(0, 2, 6);
+    // camera.lookAt(0, 1, 0);
 
     // 动画循环
     const animate = () => {
